@@ -23,6 +23,8 @@
 
 // LED driver clock source
 // ----- Uncomment the following to use a hardware timer as USI clock -----
-#define LEDDRV_USE_HW_CLOCK
+// NOT CURRENTLY SUPPORTED WITH LEDDRV PWM since USI uses Timer 0 Compare Match
+// A, which is also used as USI Timer 0 Compare Match clock
+//#define LEDDRV_USE_HW_CLOCK
 
 #endif
