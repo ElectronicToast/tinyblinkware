@@ -59,11 +59,13 @@ HEADERS += $(wildcard *.h $(APPDIR)/*.h $(HALDIR)/*.h $(MWDIR)/*.h)
 #################################### TOOLS #####################################
 
 
-CC      = avr-gcc
-CFLAGS  = -Wall -Os
-OBJDUMP = avr-objdump
-AVRSIZE = avr-size
-AVRDUDE = avrdude
+CC          = avr-gcc
+CFLAGS      = -Wall -Os
+CSTANDARD   = -std=gnu11
+
+OBJDUMP     = avr-objdump
+AVRSIZE     = avr-size
+AVRDUDE     = avrdude
 
 # For experimental program features - default nothing
 CDEF    = 
@@ -72,7 +74,7 @@ CDEF    =
 XPDEF   = EXECUTE
 
 
-COMPILE = $(CC) $(CFLAGS) -mmcu=$(DEVICE) $(CDEF)
+COMPILE = $(CC) $(CFLAGS) $(CSTANDARD) -mmcu=$(DEVICE) $(CDEF)
 
 
 # Note: For cross-platform compatibility, on Windows, you must place the AVRDUDE
