@@ -7,4 +7,5 @@ install:
 script:
   - cd tinyblinkware
   - make
+  - make clean
   - make execute
