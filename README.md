@@ -11,7 +11,7 @@ TinyBlink began as a personal project by Ray, an electrical engineering student 
 
 - Can a PCB keychain be compact, aesthetic, inexpensive, and easy to solder by hand, all at once?
 - Can you, as a student or hobbyist, encourage those without electronics background to learn basic electronics skills?
-- What can you do with 8k flash and 2k SRAM?
+- What can you do with 8 kB of flash and 512 B of SRAM?
 
 as well as a means of learning AVR C development.
 
