@@ -116,6 +116,10 @@ execute: all
 .PHONY: all clean flash fuse size disasm cpp
 
 
+# Verify device
+verify:	all
+	$(UPLOAD)
+
 # Upload flash
 flash:	all
 	$(UPLOAD) -U flash:w:main.hex:i
