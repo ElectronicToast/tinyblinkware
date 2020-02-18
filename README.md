@@ -5,7 +5,7 @@ Firmware for TinyBlink ATtiny85-based LED keychain PCBs
 
 ## Description
 
-This repository contains an avr-gcc project for the TinyBlink series of printed circuit board (PCB) keychains, which currently includes [RuddBlink](https://github.com/ElectronicToast/ruddblink). TinyBlink is based on Atmel's ATtiny85 MCU, driving the ubiquitous 74HC595 shift register connected to 8 LEDs. 
+This repository contains an avr-gcc project for the TinyBlink series of printed circuit board (PCB) keychains, which currently includes [RuddBlink](https://github.com/ElectronicToast/ruddblink) and [MoleBlink](https://github.com/ElectronicToast/moleblink). TinyBlink is based on Atmel's ATtiny85 MCU, driving the ubiquitous 74HC595 shift register connected to 8 LEDs. 
 
 TinyBlink began as a personal project by Ray, an electrical engineering student at Caltech, to address the following questions
 
