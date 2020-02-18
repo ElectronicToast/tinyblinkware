@@ -32,7 +32,7 @@ void leddrv_write (uint8_t leds) {
     {
         // Wait for USI complete flag
         do  {
-            // Strobe clock with software if not using hardware click
+            // Strobe clock with software if not using hardware clock
 #ifndef LEDDRV_USE_HW_CLOCK
             USICR |= (1<<USITC);        // Toggle clock to strobe USI out
 #endif // LEDDRV_USE_HW_CLOCK
